@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.4;
+  font-weight: 300;
+  font-family: "Roboto Condensed", sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.center-nav{
+    display: flex;
+}
+
+.search{
+    display: flex;
+}
+
+ .search input{
+    min-width: 600px;
+    padding: 10px 20px;
+   font-size: 1rem;
+   color: #ccc;
+   border: 0.5px solid #ccc;
+   border-radius: 5px;
+ }
+
+ .search button{
+    border: none;
+    padding: 10px 20px;
+ }
+
+ .mic{
+    background-color: #ede9e9;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-left: 15px;
+ }
+
+ .mic i{
+    font-size: 1.5rem;
+ }
+
+  .side-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-right: 50px;
+  }
+.side-nav i{
+    font-size: 1.75rem;
+}
+
+.side-nav i img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.tags{
+  display: flex;
+  padding: 10px 20px;
+  gap: 15px;
+  border-top: 1px solid #ccc;
+}
+
+.tag{
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: 1px solid rgb(22, 22, 22);
+}
+
+.dark{
+  background: black;
+  color: white;
+  font-weight: 400;
+}
+
+.light{
+  background-color: rgb(238, 238, 238);
+  color: rgb(67, 67, 67);
+  font-weight: 400;
+}
+
+.container{
+  display: flex;
+}
+
+aside{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.side-icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-icons i{
+  font-size: 1.75rem;
+}
+
+.side-icons p{
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.bars i{
+  margin-top: 1rem;
+  font-size:2rem;
+}
+
+.main-container{
+  width: 100%;
+}
+
+main{
+  min-height: 100vh;
+ 
+  background-color: #ccc;
+}
+
+.avatar, img{
+  width: 50px;
+  height: 50px;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+.card{
+  padding: 10px;
+  max-width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+ margin-bottom: 5rem;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-content{
+  padding-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.card h3{
+  font-size: 20px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.chanel{
+  font-size: 16px;
+  font-weight: 700;
+  
+}
+
+.content-stauts{
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 10px;
+  
+}
+
+@media (max-width:768px) {
+  html{
+    font-size: 80%;
+  }
+   
+.search{
+  display: flex;
+}
+
+.search input{
+  display: none;
+}
+
+.search button{
+ display: none;
+}
+ .side-nav{
+  margin-right: 7px;
+  margin-left: 20px;
+ }
+ .card{
+ margin-bottom: 7rem;
+}
+aside{
+display: none;
+}
+}
